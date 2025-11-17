@@ -20,8 +20,8 @@ Short project description — what this Laravel application does and who it's fo
 
 1. Clone the repository
 ```bash
-git clone <repo-url> project-name
-cd project-name
+git clone https://github.com/death-bzee/laravel-first.git laravel   
+cd laravel
 ```
 
 2. Install PHP dependencies
