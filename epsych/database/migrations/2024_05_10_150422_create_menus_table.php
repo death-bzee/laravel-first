@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('menus', function (Blueprint $table) {
+            $table->id();
+            $table->boolean('is_active')->default(true);
+            $table->boolean('_blank')->default(false);
+            $table->json('title');
+            $table->string('icon')->nullable();
+            $table->string('link')->nullable();
+            $table->integer('sort')->default(0);
+
+            $table->unsignedBigInteger('parent_id')->nullable()->after('id');
+            $table->foreign('parent_id')->references('id')->on('menus')->onDelete('cascade');
+            $table->json('roles')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('menus');
+    }
+};

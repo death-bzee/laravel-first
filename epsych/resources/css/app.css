@@ -1,0 +1,22 @@
+@import 'tom-select/dist/css/tom-select.css';
+@import "flatpickr/dist/flatpickr.min.css";
+@import "@flaticon/flaticon-uicons/css/all/all.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+[x-cloak] {
+    display: none;
+}
+
+@layer base {
+    a:hover {
+        text-decoration: none !important;
+    }
+}
+
+body {
+    @apply font-medium;
+}

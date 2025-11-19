@@ -1,0 +1,61 @@
+$primary: #6366F1
+
+
+.text-custom-500
+    @apply text-primary
+
+.fi-link-icon
+    @apply max-w-none
+
+.fi-color-primary .text-custom-600
+    color: $primary
+
+.fi-link
+    @apply transition-all duration-200
+
+.fi-link
+    &:hover
+        @apply opacity-50
+
+.fi-ta-header-cell-label
+    @apply normal-case
+
+.filepond--label-action
+    color: $primary
+    @apply transition-all
+    &:hover
+        color: $primary
+        @apply opacity-50
+
+.fi-fo-field-wrp-label .bg-custom-600
+    background: $primary
+
+.fi-in-entry-wrp-label .font-medium
+    font-weight: bold
+
+.fi-fo-field-wrp-label .text-danger-600
+    @apply text-red-500
+
+.fi-ta-text-item .link
+    color: $primary
+    &:hover
+        @apply opacity-50
+
+.fi-btn
+    &.fi-btn-color-primary
+        @apply bg-primary transition-all
+
+        &:hover
+            @apply opacity-80
+
+    &[class*="focus-visible:ring-custom-500"]
+        @apply ring-primary
+
+    &[class*="dark:focus-visible:ring-custom-400"]
+        @apply ring-primary
+
+    &fi-btn-color-success
+        @apply bg-success-500 transition-all
+
+        &:hover
+            @apply opacity-80

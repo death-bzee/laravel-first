@@ -1,0 +1,114 @@
+$global-muted-background: #f3f4f6
+$global-control-height: 42px
+$global-color: #333
+$global-primary-background: #6366f1
+$global-secondary-background: #6366F1
+$global-border-radius: 5px
+
+
+.select2.select2-container
+    width: 100% !important
+    margin-top: 8px
+
+.select2.select2-container .select2-selection
+    margin-bottom: 8px
+    border: 1px solid $global-muted-background
+    border-radius: 5px
+    height: $global-control-height
+    outline: none !important
+    transition: all .15s ease-in-out
+
+.select2.select2-container .select2-selection .select2-selection__rendered
+    color: $global-color
+    line-height: $global-control-height
+    padding-right: 33px
+
+.select2.select2-container .select2-selection .select2-selection__arrow
+    background: #f8f8f8
+    border-left: 1px solid $global-muted-background
+    border-radius: 0 3px 3px 0
+    height: $global-control-height
+    width: 33px
+
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--single
+    background: #f8f8f8
+
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--single .select2-selection__arrow
+    border-radius: 0 5px 0 0
+
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--multiple
+    border: 1px solid #34495e
+
+.select2.select2-container .select2-selection--multiple
+    height: auto
+    min-height: 34px
+
+.select2.select2-container .select2-selection--multiple .select2-search--inline .select2-search__field
+    margin-top: 2px
+    height: 27px
+
+.select2.select2-container .select2-selection--multiple .select2-selection__rendered
+    color: #fff
+    display: block
+    padding: 0 4px
+    line-height: 29px
+
+.select2.select2-container .select2-selection--multiple .select2-selection__choice
+    background-color: $global-secondary-background
+    border: 0
+    border-radius: $global-border-radius
+    margin: 4px 4px 0 0
+    padding: 0 12px 0 24px
+    height: 30px
+    line-height: 32px
+    font-size: 14px
+    position: relative
+
+.select2.select2-container .select2-selection--multiple .select2-selection__choice .select2-selection__choice__remove
+    position: absolute
+    top: 0
+    left: 0
+    height: 30px
+    width: 30px
+    margin: 0
+    text-align: center
+    color: #fff
+    font-weight: bold
+    font-size: 14px
+
+    &:hover
+        background-color: rgba(#fff, .2)
+
+.select2-container .select2-dropdown
+    background: transparent
+    border: none
+    margin-top: -5px
+
+.select2-container .select2-dropdown .select2-search
+    padding: 0
+
+.select2-container .select2-dropdown .select2-search input
+    outline: none !important
+    border: 1px solid #34495e !important
+    border-bottom: none !important
+    padding: 4px 6px !important
+
+.select2-container .select2-dropdown .select2-results
+    padding: 0
+
+.select2-container .select2-dropdown .select2-results ul
+    background: #fff
+    border: 1px solid #34495e
+
+.select2-container .select2-dropdown .select2-results ul .select2-results__option--highlighted[aria-selected]
+    background-color: $global-primary-background
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove
+    border-right: 0
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display
+    padding-left: 8px
+    padding-right: 10px
+
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--multiple
+    border: 1px solid $global-muted-background
